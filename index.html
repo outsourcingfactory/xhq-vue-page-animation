@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<!--    <meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>theme</title>
+  </head>
+  <style>
+    #app{
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <script>
+    // 根据不同设备的理想视口宽度动态设置根元素的`font-size`。
+    let idealViewWidth = window.screen.width;
+    const BASICVALUE = 750;
+    document.documentElement.style.fontSize = (idealViewWidth / BASICVALUE) * 100 + 'px';
+  </script>
+<!--  <script src="https://gw.alipayobjects.com/os/lib/less.js/3.8.1/less.min.js"></script>-->
+<!--  <script>-->
+<!--    window.less.modifyVars({-->
+<!--      '@bg-color':'black',-->
+<!--      '@aaaa':'1000px',-->
+<!--    })-->
+
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
